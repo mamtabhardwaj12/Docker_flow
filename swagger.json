@@ -1,0 +1,33 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "Docker_flow",
+    "version" : "1.0.0",
+    "description" : "Docker_flow"
+  },
+  "paths" : {
+    "/DOCK_IIB_Flow" : {
+      "post" : {
+        "operationId" : "postDOCK_IIB_Flow",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Insert a DOCK_IIB_Flow",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "type" : "string"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      }
+    }
+  },
+  "basePath" : "/docker_flow/v1"
+}
